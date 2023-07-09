@@ -1,0 +1,120 @@
+body{
+    background-color: black;
+}
+#mobileContainer{
+    position: absolute;
+    top: 200vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    row-gap: 30px;
+    column-gap: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.device{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+#a{
+    background-image: url(../ASSECT/Image/apple.jpeg);
+}
+#b{
+    background-image: url(../ASSECT/Image/dow1.jpeg);
+}
+#c{
+    background-image: url(../ASSECT/Image/dow2.jpeg);
+}
+#d{
+    background-image: url(../ASSECT/Image/htc.jpeg);
+}
+#e{
+    background-image: url(../ASSECT/Image/Lg.jpeg);
+}
+#f{
+    background-image: url(../ASSECT/Image/Lg1.jpeg);
+}
+#g{
+    background-image: url(../ASSECT/Image/mi.jpeg);
+}
+#h{
+    background-image: url(../ASSECT/Image/one+.jpeg);
+}
+#i{
+    background-image: url(../ASSECT/Image/One+1.jpeg);
+}
+#j{
+    background-image: url(../ASSECT/Image/oppo.jpg);
+}
+#k{
+    background-image: url(../ASSECT/Image/Suny.jpeg);
+}
+#l{
+    background-image: url(../ASSECT/Image/Sammsung.jpeg);
+}
+.subdiv{
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.device:hover>.subdiv{
+    filter: blur(80px);
+}
+.info{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    display :none;
+}
+.device:hover>.info{
+    display: flex;
+}
+.device:hover{
+    transform: scale(1.1);
+}
+.phoneName{
+    color: lawngreen;
+    font-size: 8vh;
+    letter-spacing:4px;
+}
+.Price{
+    color: yellow;
+    font-size: 4vh;
+    letter-spacing: 4px;
+}
+.modulebutton{
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 19px;
+    letter-spacing: 3px;
+    box-shadow: 5px 5px 6px black;
+    cursor: pointer;
+}
+#pageHeading{
+    font-family: 'Dancing Script', cursive;
+}

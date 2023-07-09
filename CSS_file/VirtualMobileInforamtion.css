@@ -1,0 +1,69 @@
+/* Shree Om: Ganeshay Nama: */
+table,tr,td,th{
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+}
+#VirtueContainer{
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    position: absolute;
+    top: 100vh;
+}
+#diviceName{
+    color: black;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.divimg{
+    width: 40%;
+    border-radius: 15px;
+    float: left;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    left: 10px;
+}
+#Vircontainer1{
+    width: 40%;
+    height: 40vh;
+    float: right;
+    padding: 50px;
+    color: brown;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+table{
+    color: black;
+    width: 100%;
+    /* border-radius: 5px solid salmon; */
+    border: 5px solid white;
+    background-color: rgb(252, 196, 196);
+    font-size: 18px;
+}
+th{
+    font-size: 25px;
+    color: brown;
+    /* border: 4px solid salmon; */
+    border: 4px solid white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    }
+.th1{
+        font-size: 22px;
+        color: black;
+    }
+    td{
+        background-color: brown;
+        color: white;
+        /* border: 2px solid rgb(252, 1%, 1%); */
+        border: 2px solid white;
+    }
+    #pageHeading{
+        font-family: 'Caprasimo', cursive;
+font-family: 'Dancing Script', cursive;
+    }

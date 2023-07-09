@@ -1,0 +1,217 @@
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caprasimo&family=Dancing+Script:wght@700&display=swap');
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+#headerVideo{
+    width: 100%;
+    filter: brightness(20%);
+}
+
+#pageHeading{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif; 
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 20px;
+    word-spacing: 50px;
+    text-shadow: 2px 2px 5px black;
+    animation: textMove 2s 1 ease-in;
+    }
+
+@keyframes textMove {
+    from{
+        transform: translate(-820px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+#logo{
+    position: absolute;
+    left: 10px;
+    width: 180px;
+    height: 180px;
+    top: 1px;
+    z-index: 2;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+a{
+   color: plum; 
+   text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caprasimo&family=Cedarville+Cursive&family=Dancing+Script:wght@700&display=swap');
+
+#scroll{
+    position: absolute;
+    bottom: 30px;
+    font-size: 60px;
+    color: lawngreen;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+    animation: arrowMove 0.5s;
+}
+
+#scroll:hover{
+    animation: arrow 0.5s 1 ease-in;
+}
+@keyframes arrow {
+    0%,100%{
+        transform: rotate(0deg) skew(0deg,0deg) scale(1);
+    }
+    25%,75%{
+        transform: rotate(30deg) skew(20deg,-20deg) scale(1,2);
+    }
+    50%,85%{
+        transform: rotate(-30deg) skew(-20deg,20deg) scale(1);
+    }
+}
+
+@keyframes arrowMove {
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+#container1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#videoContainer{
+    width: 70%;
+    height: 125%;
+    border-radius: 50% 50% 85% 50% / 50% 50% 100% 80% ;
+    position: relative;
+    bottom: 20%;
+    right: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end; 
+}
+.leftVideo{
+    width: 120%;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caprasimo&family=Cedarville+Cursive&family=Dancing+Script:wght@700&display=swap');
+
+.rightHeading{
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 30%;
+    font-size: 40px;
+    letter-spacing: 20px; 
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 4px 4px 4px yellow;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caprasimo&family=Cedarville+Cursive&family=Dancing+Script:wght@700&display=swap');
+
+
+.rightButton{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    width: 320px;
+    height: 40px;
+    background-image: linear-gradient(75deg,#f953c6,#6be585,#dd3e54,#009FFF,#ec2F4B);
+    background-size: 400px;
+    background-position: 400px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.rightButton:hover{
+    transform: scale(1.2);
+    animation: colorButton 0.5s infinite ease-in;
+}
+@keyframes colorButton {
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: 400px;
+    }
+}
+#shadow{
+    position: absolute;
+    z-index: 0;
+    width: 80%;
+    height: 80vh;
+    background-image: linear-gradient(75deg,#1E9600,#FFFFFF,#f953c6,#6be585,#dd3e54,#009FFF, royalblue,#e65785);
+    background-size: 800px;
+    background-position: 800px;
+    border-radius: 98% 2% 100% 0% / 0% 100% 0% 100% ; 
+    filter: blur(100px);
+    animation: backgroundShadow 2s infinite linear;
+}
+@keyframes backgroundShadow {
+    from{
+        background-position: 800px;
+    }
+    to{
+        background-position: 0px;
+    }
+}
